@@ -20,14 +20,14 @@ for (let i = 0; i < numVoters; i++) {
   let vote = prompt(`Hi ${voterName}, who do you vote for?\n${candidateNames.toString()}`);
   
   let isVoteMatchCandidate = false;
-  for (let candidateCounter = 0; candidateCounte < candidateNames.length; candidateCounte++) {
-    if (vote === candidateNames[candidateCounte]) {
-      candidateVotes[candidateCounte]++;
+  for (let candidateCounter = 0; candidateCounter < candidateNames.length; candidateCounter++) {
+   if(vote === candidateNames[candidateCounter]) {
+      candidateVotes[candidateCounter]++;
       isVoteMatchCandidate = true;
       console.log(`Thanks ${voterName}, your vote for ${vote} has been recorded.`);
       break;
     }
-    else if (candidateCounte === candidateNames.length - 1 && !isvoteMatchCandidate) {
+    else if (candidateCounter === candidateNames.length - 1 && !isvoteMatchCandidate) {
       console.log("Invalid candidate name. Vote not counted.");
     }
   }
