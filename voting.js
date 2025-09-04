@@ -19,11 +19,11 @@ for (let i = 0; i < numVoters; i++) {
  
   let vote = prompt(`Hi ${voterName}, who do you vote for?\n${candidateNames.toString()}`);
   
-  let isvoteMatchCandidate = false;
+  let isVoteMatchCandidate = false;
   for (let candidateCounter = 0; candidateCounte < candidateNames.length; candidateCounte++) {
     if (vote === candidateNames[candidateCounte]) {
       candidateVotes[candidateCounte]++;
-      voteMatchCandidate = true;
+      isVoteMatchCandidate = true;
       console.log(`Thanks ${voterName}, your vote for ${vote} has been recorded.`);
       break;
     }
