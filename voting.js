@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 // Number of candidates
 let numCandidates = parseInt(prompt("How many candidates?"));
 let candidateNames = [];
