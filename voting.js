@@ -27,10 +27,11 @@ for (let i = 0; i < numVoters; i++) {
       console.log(`Thanks ${voterName}, your vote for ${vote} has been recorded.`);
       break;
     }
-  }
- else {
+    else {
     console.log("Invalid candidate name. Vote not counted.");
   }
+  }
+ 
 }
 
 // Show results
